@@ -1,0 +1,23 @@
+body {
+  /* Replace the colors with your desired gradient colors */
+  background-image: linear-gradient(to bottom right, #ff7f50, #00bfff) !important;
+  /* Make the body cover the entire viewport */
+  min-height: 100vh;
+  /* You can also specify additional background properties */
+  background-size: cover;
+  /* Adjusts the size of the background image */
+  background-repeat: no-repeat;
+  /* Prevents repeating the background */
+  /* Add any other styles you want for the body element */
+  /* e.g., font-family, color, etc. */
+  margin: 0;
+  /* Remove default body margin */
+  padding: 0;
+  /* Remove default body padding */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Use the appropriate font weight */
+  /* Add other styling for the title */
+}

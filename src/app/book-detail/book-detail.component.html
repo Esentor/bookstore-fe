@@ -1,0 +1,19 @@
+<!-- book-detail.component.html -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div *ngIf="book" class="card-header">
+                    <h3>{{ book.title }}</h3>
+                </div>
+                <div *ngIf="book" class="card-body">
+                    <p><strong>Author:</strong> {{ book.author }}</p>
+                    <p><strong>Price:</strong> {{ book.price}}</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-secondary" (click)="goBack()">Back to Book List</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
