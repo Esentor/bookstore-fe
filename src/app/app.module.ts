@@ -4,14 +4,20 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
-import { CommonModule } from '@angular/common'; 
+import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { QuickNavComponent } from './shared/quick-nav/quick-nav.component';
 
 @NgModule({
-  declarations: [AppComponent, BookListComponent, BookDetailComponent], // Include BookListComponent here
-  imports: [BrowserModule, AppRoutingModule, CommonModule, RouterModule, HttpClientModule], // Include CommonModule here
+  declarations: [AppComponent, BookListComponent, BookDetailComponent, QuickNavComponent],
+  imports: [BrowserModule, AppRoutingModule, CommonModule, RouterModule, MatSidenavModule, MatListModule, HttpClientModule, BrowserAnimationsModule, MatToolbarModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

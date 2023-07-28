@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppComponent } from './app.component';
+import { QuickNavComponent } from './quick-nav.component';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
+describe('QuickNavComponent', () => {
+  let component: QuickNavComponent;
+  let fixture: ComponentFixture<QuickNavComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AppComponent]
+      declarations: [QuickNavComponent]
     });
-    fixture = TestBed.createComponent(AppComponent);
+    fixture = TestBed.createComponent(QuickNavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
