@@ -13,9 +13,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { QuickNavComponent } from './shared/quick-nav/quick-nav.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
-  declarations: [AppComponent, BookListComponent, BookDetailComponent, QuickNavComponent],
+  declarations: [AppComponent, BookListComponent, BookDetailComponent, QuickNavComponent, UserListComponent, UserProfileComponent],
   imports: [BrowserModule, AppRoutingModule, CommonModule, RouterModule, MatSidenavModule, MatListModule, HttpClientModule, BrowserAnimationsModule, MatToolbarModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
